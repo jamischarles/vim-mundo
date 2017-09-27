@@ -90,15 +90,15 @@ function! s:MundoMapGraph()"{{{
     nnoremap <script> <silent> <buffer> o             :call <sid>MundoPython('MundoRevert()')<CR>
     nnoremap <script> <silent> <buffer> <down>        :<C-u>call <sid>MundoPython('MundoMove(1,'. v:count .')')<CR>
     nnoremap <script> <silent> <buffer> <up>          :<C-u>call <sid>MundoPython('MundoMove(-1,'. v:count .')')<CR>
-    nnoremap <script> <silent> <buffer> J             :<C-u>call <sid>MundoPython('MundoMove(1,'. v:count .',True,True)')<CR>
-    nnoremap <script> <silent> <buffer> K             :<C-u>call <sid>MundoPython('MundoMove(-1,'. v:count .',True,True)')<CR>
+    nnoremap <script> <silent> <buffer> N             :<C-u>call <sid>MundoPython('MundoMove(1,'. v:count .',True,True)')<CR>
+    nnoremap <script> <silent> <buffer> E             :<C-u>call <sid>MundoPython('MundoMove(-1,'. v:count .',True,True)')<CR>
     nnoremap <script> <silent> <buffer> gg            gg:<C-u>call <sid>MundoPython('MundoMove(1,'. v:count .')')<CR>
     nnoremap <script> <silent> <buffer> P             :call <sid>MundoPython('MundoPlayTo()')<CR>
     nnoremap <script> <silent> <buffer> d             :call <sid>MundoPython('MundoRenderPatchdiff()')<CR>
     nnoremap <script> <silent> <buffer> i             :call <sid>MundoPython('MundoRenderToggleInlineDiff()')<CR>
     nnoremap <script> <silent> <buffer> /             :call <sid>MundoPython('MundoSearch()')<CR>
-    nnoremap <script> <silent> <buffer> n             :call <sid>MundoPython('MundoNextMatch()')<CR>
-    nnoremap <script> <silent> <buffer> N             :call <sid>MundoPython('MundoPrevMatch()')<CR>
+    nnoremap <script> <silent> <buffer> k             :call <sid>MundoPython('MundoNextMatch()')<CR>
+    nnoremap <script> <silent> <buffer> K             :call <sid>MundoPython('MundoPrevMatch()')<CR>
     nnoremap <script> <silent> <buffer> p             :call <sid>MundoPython('MundoRenderChangePreview()')<CR>
     nnoremap <script> <silent> <buffer> r             :call <sid>MundoPython('MundoRenderPreview()')<CR>
     nnoremap <script> <silent> <buffer> ?             :call <sid>MundoPython('MundoToggleHelp()')<CR>
