@@ -1,6 +1,10 @@
 vim-mundo
 =========
 
+### My fork difference:
+- Remapped keys for colemak
+---
+
 A Vim plugin to visualizes the Vim [undo tree](http://vimdoc.sourceforge.net/htmldoc/undo.html#undo-tree), a fork of
 [Gundo](https://github.com/sjl/gundo.vim).
 
