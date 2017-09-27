@@ -84,8 +84,10 @@ endfunction"}}}
 "{{{ Mundo buffer settings
 
 function! s:MundoMapGraph()"{{{
-    exec 'nnoremap <script> <silent> <buffer> ' . g:mundo_map_move_older . " :<C-u>call <sid>MundoPython('MundoMove(1,'. v:count .')')<CR>"
-    exec 'nnoremap <script> <silent> <buffer> ' . g:mundo_map_move_newer . " :<C-u>call <sid>MundoPython('MundoMove(-1,'. v:count .')')<CR>"
+    nnoremap <script> <silent> <buffer> n             :<C-u>call <sid>MundoPython('MundoMove(1,'. v:count .')')<CR>
+    nnoremap <script> <silent> <buffer> e             :<C-u>call <sid>MundoPython('MundoMove(-1,'. v:count .')')<CR>
+    nnoremap <script> <silent> <buffer> N             :<C-u>call <sid>MundoPython('MundoMove(1,'. v:count .',True,True)')<CR>
+    nnoremap <script> <silent> <buffer> E             :<C-u>call <sid>MundoPython('MundoMove(-1,'. v:count .',True,True)')<CR>
     nnoremap <script> <silent> <buffer> <CR>          :call <sid>MundoPython('MundoRevert()')<CR>
     nnoremap <script> <silent> <buffer> o             :call <sid>MundoPython('MundoRevert()')<CR>
     nnoremap <script> <silent> <buffer> <down>        :<C-u>call <sid>MundoPython('MundoMove(1,'. v:count .')')<CR>
